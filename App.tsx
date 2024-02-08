@@ -12,8 +12,14 @@ import Restourant from './screens/Restourant';
 import Profile from './screens/Profile';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
+export type RootStackParams = {
+  Explore: undefined;
+  Restourant: undefined;
+  Profile: undefined;
+};
+
 function App(): React.JSX.Element {
-  const RootStack = createNativeStackNavigator();
+  const RootStack = createNativeStackNavigator<RootStackParams>();
   return (
     <NavigationContainer>
       <RootStack.Navigator>
