@@ -17,6 +17,12 @@ const style = StyleSheet.create({
     padding: 1,
     fontFamily: 'arial',
   },
+  titleText: {
+    fontFamily: 'arial',
+    fontSize: 30,
+    alignSelf: 'center',
+    color: 'blue',
+  },
 });
 
 export default style;

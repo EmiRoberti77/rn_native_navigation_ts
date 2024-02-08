@@ -7,7 +7,7 @@ import Menu from '../components/Menu';
 const Explore = (): JSX.Element => {
   return (
     <View>
-      <Text>Explore</Text>
+      <Text style={style.titleText}>Explore</Text>
       <View style={style.container}>
         <RestourantCard name="Restaurant1" />
         <RestourantCard name="Restaurant2" />
