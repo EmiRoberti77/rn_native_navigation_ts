@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Profile from './screens/Profile';
@@ -26,40 +25,4 @@ function App(): React.JSX.Element {
     </NavigationContainer>
   );
 }
-
-// <Menu />
-// <View style={styles.container}>
-//   <Text style={styles.titleText}>Restourant app</Text>
-// </View>
-// <View style={styles.container}>
-//   <Text style={styles.titleText}>Explore</Text>
-// </View>
-// <View style={styles.container}>
-//   <Text style={styles.titleText}>Restourant</Text>
-// </View>
-// <View style={styles.container}>
-//   <Text style={styles.titleText}>Profile</Text>
-// </View>
-
-const styles = StyleSheet.create({
-  titleText: {
-    fontFamily: 'arial',
-    alignItems: 'center',
-    fontSize: 35,
-    marginTop: 10,
-    marginBottom: 5,
-    alignSelf: 'center',
-  },
-  container: {
-    marginTop: 10,
-    marginBottom: 10,
-    borderColor: 'black',
-    borderWidth: 1,
-    borderRadius: 10,
-    width: '90%',
-    alignSelf: 'center',
-    backgroundColor: 'gray',
-  },
-});
-
 export default App;
