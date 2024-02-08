@@ -10,7 +10,7 @@ const Menu = (): JSX.Element => {
       <TouchableOpacity onPress={() => navigation.navigate('Explore')}>
         <Text style={style.textContainer}>Explore</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Restaurant')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Restourant')}>
         <Text style={style.textContainer}>Restaurants</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
