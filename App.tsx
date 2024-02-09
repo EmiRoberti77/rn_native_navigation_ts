@@ -8,14 +8,16 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import Explore from './screens/Explore';
-import Restourant from './screens/Restourant';
+import Restourants from './screens/Restourants';
 import Profile from './screens/Profile';
+import RestaurantScreen from './screens/RestaurantScreen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 export type RootStackParams = {
   Explore: undefined;
-  Restourant: undefined;
+  Restourants: undefined;
   Profile: undefined;
+  RestourantScreen: {name: string};
 };
 
 function App(): React.JSX.Element {
@@ -24,8 +26,12 @@ function App(): React.JSX.Element {
     <NavigationContainer>
       <RootStack.Navigator>
         <RootStack.Screen name="Explore" component={Explore} />
-        <RootStack.Screen name="Restourant" component={Restourant} />
+        <RootStack.Screen name="Restourants" component={Restourants} />
         <RootStack.Screen name="Profile" component={Profile} />
+        <RootStack.Screen
+          name="RestourantScreen"
+          component={RestaurantScreen}
+        />
       </RootStack.Navigator>
     </NavigationContainer>
   );

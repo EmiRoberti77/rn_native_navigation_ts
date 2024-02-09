@@ -13,7 +13,7 @@ const Menu = (): JSX.Element => {
       <TouchableOpacity onPress={() => navigation.navigate('Explore')}>
         <Text style={style.textContainer}>Explore</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Restourant')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Restourants')}>
         <Text style={style.textContainer}>Restaurants</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Profile')}>

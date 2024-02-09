@@ -8,7 +8,7 @@ interface RestourantCardProps {
 
 const RestourantCard: FC<RestourantCardProps> = ({name}): JSX.Element => {
   return (
-    <View>
+    <View style={style.textContainer}>
       <Text style={style.textContainer}>Restourant:{name}</Text>
     </View>
   );
